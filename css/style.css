@@ -1,8 +1,22 @@
+
 #link{
     text-decoration: none;
-    color: #3478f6
+    color: #0d6efd
 }
+
 .chats{
     font-size: 16px;
     font-weight: 400;
+}
+.sub{
+    font-size: 14px;
+    color: black;
+}
+.letra{
+    font-size: 16px;
+    color: black;
+}
+.perfil{
+    border-radius: 300px;
+    width: 90%;
 }
