@@ -25,15 +25,15 @@
       <div class="col-3 ">
         <img class="perfil" src="https://pps.whatsapp.net/v/t61.24694-24/299347649_637322880919706_5956294310088891833_n.jpg?ccb=11-4&oh=01_AdS7J_zEBoHKvJeMHHkpu3gQuogKPevLKzCQwqDDwZfpCw&oe=63621814" alt="" srcset="">
       </div>
-      <div class="col-9 ">
-        <strong>Angel Castañeda</strong>  &ensp;  <b style="font-weight:400; font-size: 14px; color: #0d6efd;">20:22</b>
-
-
+      
+      <div class="col-9 text-truncate ">
+        <strong>Angel Castañeda</strong>  &ensp;  <b style=" font-size: 14px; color: #0d6efd;">Nuevo mensaje</b>
         <div style="margin-top: 3%"></div>
         <!--Mensaje-->
         <div class="text-truncate" style="margin-right:0%">
           This text is quite long, and will be truncated once displayed.
         </div>
+     
         <!--Mensaje-->
       </div>
       <hr style="margin-top: 2.5%;width: 72%; position: relative; left: 28%;">
@@ -225,6 +225,8 @@
 </script>
 
 
+
+
 <!--Barra estatica-->
 
 <div style="position: fixed; width: 100%; top:0; left: 0;  background-color: rgba(255, 255, 255, 0.907); backdrop-filter: blur(10px);" >
@@ -237,8 +239,8 @@
     <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="font-size: 19px; padding: 1%; " id="link">Más </a> 
   </div>
 
-  <div class="offset-9 col-1">
-  <a href="" data-bs-toggle="modal" data-bs-target="#editar"><img  src="https://img.icons8.com/external-regular-kawalan-studio/20/0d6efd/external-edit-social-media-regular-kawalan-studio.png"/></a>
+  <div class="col-1 offset-9">
+  <a style="margin-left: 80%; " href="" data-bs-toggle="modal" data-bs-target="#editar"><img  src="https://img.icons8.com/external-regular-kawalan-studio/20/0d6efd/external-edit-social-media-regular-kawalan-studio.png"/></a>
   </div>
   </div>
 
@@ -296,7 +298,9 @@
       <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" > Selecciona contactos</a></div>
 
       <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: -1%;">
-      <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" >  Número de teléfono </a></div>
+      <div class="text-center" data-bs-toggle="modal" data-bs-target="#numero_telefono" style="width: 100%; padding-bottom: 3%; color: #0d6efd;"> <a > Número de teléfono </a></div>
+
+
 
       <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: -1%;">
       <div class="text-center" style="width: 100%; padding-bottom: 3%;"  data-bs-dismiss="modal"><button id="link" style="background:transparent; border:0px"> <b>Cancelar</b> </button>  </div>
@@ -310,35 +314,79 @@
   <!--editar-->
 
 
+  <!-- Modal numero telefono-->
+<div class=" modal fade " style="backdrop-filter: blur(5px);" id="numero_telefono" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="numero_telefono" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      <div style="background-color: white;padding: 3%;  border-radius: 7px;">
+          <b><center>WhatsApp</center></b>
+          <div style="margin: 2%"></div>
+          <p class="text-center sub">Ingresa el nuevo numero de teléfono con el codigo del pais: </p>
+          <p style="margin-top: -3%;" class="text-center sub">Ex:52xxxxxxxxxx </p>
+      </div>
+
+  <input class="form-control" type="text" name="" id="" style="width: 90%; margin: auto; border-radius:7px; border-color: rgb(194, 194, 194);">        
+       
+  <div style="background-color: rgba(255, 255, 255, 0.749);padding: 0%; border-radius: 7px;">
+    <br>
+  <div class="row">
+          <button id="link" type="button" class="text-center " style="border-top: 1px solid rgb(194, 194, 194); border-left: 0px; border-right: 0px; border-bottom: 0px; width: 48%;height: 50px; margin-left: 2.5%; border-radius:0px; margin-bottom: -4%; background: transparent;" ><a href="" id="link"> Cancelar </a></button>
+          <button type="button" class="text-center " style="border-top: 1px solid  rgb(194, 194, 194);border-bottom: 0px; border-left: 1px solid  rgb(194, 194, 194); border-right: 0px; width: 47%; margin-left: 0%; border-radius:0px; margin-bottom: -4%; background: transparent;" data-bs-dismiss="modal"><a href="" style="color: black; text-decoration: none;">Abrir chat</a></button>
+    </div>
+    
+  
+  </div>
+    <div style="margin: 2%"></div>
+ 
+      </div>
+  </div>
+  </div>
+  <!--numero telefono-->
+
+
   <!-- Modal -->
   <div class=" modal fade " style="backdrop-filter: blur(5px);" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div style="background-color: white;padding: 3%; border-radius: 7px;">
-            <b><center>WhatsApp</center></b>
-            <div style="margin: 5%"></div>
-            <p class="text-center">Ingresa el nuevo numero de telefono con el codigo del pais: </p>
-            <p style="margin-top: -2%;" class="text-center">Ex: 89xxxxxxxx </p>
-            <input class="form-control" type="text" style="width: 100%; padding: 3%; height: 40px; border: 1px solid rgb(188, 188, 188); border-radius: 7px;">
-        <br>
-        </div>
- 
-       
-         <div style="background-color: rgba(255, 255, 255, 0.749);padding: 0%; border-radius: 7px;">
-          <br>
-        <div class="row">
-                <button id="link" type="button" class="text-center " style="border-top: 1px solid rgb(194, 194, 194); border-left: 0px; border-right: 0px; border-bottom: 0px; width: 48%;height: 50px; margin-left: 2.5%; border-radius:0px; margin-bottom: -4%; background: transparent;" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="text-center " style="border-top: 1px solid  rgb(194, 194, 194);border-bottom: 0px; border-left: 1px solid  rgb(194, 194, 194); border-right: 0px; width: 47%; margin-left: 0%; border-radius:0px; margin-bottom: -4%; background: transparent;" data-bs-dismiss="modal"><a href="" style="color: black; text-decoration: none;">Abrir chat</a></button>
+          <div class="row">
+
+            <div class="col-1" style="margin-top: 3%;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill=" #000000" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </div>
+
+            <div class="offset-1 col-9 text-truncate" style="margin-top: 5%;">
+              <strong style="font-size: 18px; font-weight: 400;">Disponible</strong><br>
+            </div>
           </div>
-          
         
         </div>
-          <div style="margin: 2%"></div>
-          
+        <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" > Nuevo grupo</a></div>
+  
+        <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: -1%;">
+        <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" >  Chats Archivados </a></div>
+  
+        <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: -1%;">
+        <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" >  Programador de mensajes </a></div>
 
+        <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: -1%;">
+        <div class="text-center" style="width: 100%; padding-bottom: 3%;"> <a href="" id="link" >  Configuracion </a></div>
+
+        <hr style="background-color: rgb(194, 194, 194); width: 100%; margin-top: 0%;">
+        <div class="text-center" style="width: 100%; padding-bottom: 3%;"  data-bs-dismiss="modal"><button id="link" style="background:transparent; border:0px"> <b>Cancelar</b> </button>  </div>
+
+
+
+        
+        </div>
          </div>
     </div>
+ 
     </div>
+  
     <!--Mas-->
 <!--Barra estatica-->
 
